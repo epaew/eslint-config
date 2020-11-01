@@ -1,0 +1,11 @@
+---
+root: true
+extends:
+  - ./presets/base.yaml
+  - ./presets/jest.yaml
+  - ./presets/node.yaml
+  - ./presets/node-typescript.yaml
+  - ./presets/react.yaml
+  - ./presets/react-native.yaml
+  - ./presets/react-typescript.yaml
+  - ./presets/typescript.yaml
