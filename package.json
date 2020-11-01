@@ -5,6 +5,11 @@
   "license": "MIT",
   "author": "epaew <epaew.333@gmail.com>",
   "main": "index.js",
+  "files": [
+    "config",
+    "presets",
+    "*.js"
+  ],
   "scripts": {
     "eslint": "eslint --ext .js .",
     "eslint:fix": "eslint --ext .js --fix ."
