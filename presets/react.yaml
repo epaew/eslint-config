@@ -1,0 +1,6 @@
+---
+extends:
+  - ../config/filenames-simple-react.yaml
+  - ../config/import-react.yaml
+  - ../config/prettier-react.yaml
+  - ../config/react.yaml

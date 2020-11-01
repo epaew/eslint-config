@@ -1,0 +1,6 @@
+---
+extends:
+  - ../config/eslint.yaml
+  - ../config/filenames-simple.yaml
+  - ../config/import.yaml
+  - ../config/prettier.yaml
