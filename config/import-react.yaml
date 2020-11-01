@@ -1,0 +1,7 @@
+---
+extends:
+  - plugin:import/react
+plugins:
+  - import
+rules:
+  import/no-nodejs-modules: error

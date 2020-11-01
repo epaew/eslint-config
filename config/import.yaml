@@ -1,0 +1,22 @@
+---
+extends:
+  - plugin:import/recommended
+plugins:
+  - import
+rules:
+  import/exports-last: error
+  import/first: error
+  import/newline-after-import: error
+  import/no-cycle: error
+  import/no-default-export: error
+  import/no-deprecated: error
+  import/no-mutable-exports: error
+  import/no-self-import: error
+  import/no-useless-path-segments: error
+  import/order:
+    - error
+    - alphabetize:
+        order: asc
+        caseInsensitive: true
+      newlines-between: always
+  import/prefer-default-export: off

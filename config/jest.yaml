@@ -1,0 +1,20 @@
+---
+env:
+  'jest/globals': true
+extends:
+  - plugin:jest/recommended
+  - plugin:jest/style
+plugins:
+  - jest
+rules:
+  jest/consistent-test-it:
+    - error
+    - fn: it
+  jest/no-duplicate-hooks: error
+  jest/no-if: warn
+  jest/no-test-return-statement: error
+  jest/prefer-hooks-on-top: error
+  jest/prefer-spy-on: error
+  jest/prefer-todo: warn
+  jest/require-to-throw-message: warn
+  jest/require-top-level-describe: warn

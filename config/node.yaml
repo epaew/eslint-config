@@ -1,0 +1,13 @@
+---
+env:
+  node: true
+extends:
+  - plugin:node/recommended
+plugins:
+  - node
+rules:
+  node/no-missing-import: off # use import/no-unresolved
+  node/no-missing-require: off # use import/no-unresolved
+  node/no-new-require: error
+  node/no-path-concat: error
+  node/no-process-exit: error
