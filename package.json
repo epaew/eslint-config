@@ -1,6 +1,17 @@
 {
   "name": "@epaew/eslint-config",
   "version": "0.1.0",
+  "description": "My shareable ESLint config",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "jest",
+    "node",
+    "react",
+    "react-native"
+  ],
+  "homepage": "https://github.com/epaew/eslint-config",
   "repository": "git@github.com:epaew/eslint-config.git",
   "license": "MIT",
   "author": "epaew <epaew.333@gmail.com>",
