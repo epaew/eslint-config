@@ -3,3 +3,120 @@ env:
   es2020: true
 extends:
   - eslint:recommended
+rules:
+  # Possible Errors
+  no-await-in-loop: warn
+  no-console: warn
+  no-extra-parens: warn
+  no-promise-executor-return: warn
+  no-template-curly-in-string: warn
+  no-unreachable-loop: warn
+  no-useless-backreference: warn
+  require-atomic-updates: error
+
+  # Best Practices
+  array-callback-return: error
+  class-methods-use-this: warn
+  complexity: warn
+  consistent-return: warn
+  default-case: error
+  default-case-last: error
+  default-param-last: error
+  dot-location:
+    - error
+    - property
+  dot-notation: error
+  eqeqeq: error
+  grouped-accessor-pairs:
+    - error
+    - getBeforeSet
+  no-caller: error
+  no-constructor-return: error
+  no-div-regex: error
+  no-else-return: error
+  no-empty-function: warn
+  no-eq-null: error
+  no-eval: error
+  no-extend-native: error
+  no-extra-bind: error
+  no-extra-label: error
+  no-floating-decimal: error
+  no-implicit-coercion:
+    - error
+    - allow: ['!!']
+  no-implicit-globals: error
+  no-implied-eval: error
+  no-invalid-this: error
+  no-iterator: error
+  no-labels: error
+  no-lone-blocks: error
+  no-loop-func: warn
+  no-magic-numbers: warn
+  no-multi-spaces:
+    - error
+    - ignoreEOLComments: true
+  no-multi-str: error
+  no-new: error
+  no-new-func: error
+  no-new-wrappers: error
+  no-octal-escape: error
+  no-param-reassign: error
+  no-proto: error
+  no-return-assign: error
+  no-return-await: warn
+  no-script-url: error
+  no-self-compare: error
+  no-sequences: error
+  no-throw-literal: error
+  no-unmodified-loop-condition: error
+  no-unused-expressions:
+    - error
+    - allowShortCircuit: true
+      allowTernary: true
+  no-useless-call: error
+  no-useless-concat: error
+  no-useless-return: error
+  no-void: error
+  prefer-named-capture-group: warn
+  prefer-promise-reject-errors: error
+  prefer-regex-literals: error
+  radix: warn
+  require-await: warn
+  require-unicode-regexp: error
+  wrap-iife:
+    - error
+    - inside
+  yoda: error
+
+  # Strict Mode
+  strict: error
+
+  # Variables
+  no-label-var: error
+  no-shadow: warn
+  no-use-before-define: error
+
+  # Stylistic Issues
+
+  # ECMAScript 6
+  no-var: error
+
+  line-comment-position: off
+  lines-between-class-members:
+    - error
+    - always
+    - exceptAfterSingleLine: true
+  no-ternary: off
+  no-undefined: off
+  one-var:
+    - error
+    - never
+  sort-keys: warn
+  spaced-comment:
+    - error
+    - always
+    - block:
+        exceptions: ['*']
+        balanced: true
+      line:
+        markers: ['/']

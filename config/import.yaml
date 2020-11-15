@@ -4,6 +4,10 @@ extends:
 plugins:
   - import
 rules:
+  sort-imports:
+    - error
+    - allowSeparatedGroups: true
+      ignoreDeclarationSort: true # conflicts w/ import/order
   import/exports-last: error
   import/first: error
   import/newline-after-import: error
