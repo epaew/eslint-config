@@ -1,0 +1,61 @@
+name: Run ESLint
+
+on:
+  pull_request: {}
+  push:
+    branches:
+      - develop
+
+jobs:
+  eslint-plugin-filenames-simple:
+    name: eslint-plugin-filenames-simple
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: epaew/eslint-plugin-filenames-simple
+          ref: master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Fetch yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Fetch yarn cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn add git://github.com/epaew/eslint-config#${{ github.event.pull_request.head.sha }}${{ github.event.push.head.sha }}
+      - run: yarn build && yarn upgrade --latest eslint-plugin-filename-simple
+
+      - run: yarn run eslint
+
+  react-liff:
+    name: react-liff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: epaew/react-liff
+          ref: master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Fetch yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Fetch yarn cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn add git://github.com/epaew/eslint-config#${{ github.event.pull_request.head.sha }}${{ github.event.push.head.sha }}
+
+      - run: yarn run eslint
