@@ -1,9 +1,9 @@
-name: Run ESLint
+name: Run ESLint on push
 
 on:
-  pull_request: {}
   push:
     branches:
+      - master
       - develop
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
 
       - run: yarn install --frozen-lockfile
-      - run: yarn add git://github.com/epaew/eslint-config#${{ github.event.pull_request.head.sha }}${{ github.event.push.head.sha }}
+      - run: yarn add git://github.com/epaew/eslint-config#${{ github.sha }}
       - run: yarn build && yarn upgrade --latest eslint-plugin-filename-simple
 
       - run: yarn run eslint
@@ -56,6 +56,6 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
 
       - run: yarn install --frozen-lockfile
-      - run: yarn add git://github.com/epaew/eslint-config#${{ github.event.pull_request.head.sha }}${{ github.event.push.head.sha }}
+      - run: yarn add git://github.com/epaew/eslint-config#${{ github.sha }}
 
       - run: yarn run eslint
