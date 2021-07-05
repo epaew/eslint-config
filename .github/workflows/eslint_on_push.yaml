@@ -15,7 +15,7 @@ jobs:
         with:
           repository: epaew/eslint-plugin-filenames-simple
           ref: master
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2.2.0
         with:
           node-version: 14.x
       - name: Fetch yarn cache directory path
@@ -42,7 +42,7 @@ jobs:
         with:
           repository: epaew/react-liff
           ref: master
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2.2.0
         with:
           node-version: 14.x
       - name: Fetch yarn cache directory path
