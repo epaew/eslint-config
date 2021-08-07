@@ -10,12 +10,11 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    target-branch: master
+      day: saturday
 
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
-    target-branch: master
-    versioning-strategy: increase-if-necessary
+      day: saturday
+    versioning-strategy: increase
