@@ -406,10 +406,10 @@ contains-path@^0.1.0:
   resolved "https://registry.yarnpkg.com/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
   integrity sha1-/ozxhP9mcLa67wGp1IYaXL7EEgo=
 
-core-js@^3.6.5:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.7.0.tgz#b0a761a02488577afbf97179e4681bf49568520f"
-  integrity sha512-NwS7fI5M5B85EwpWuIwJN4i/fbisQUwLwiSNUWeXlkAZ0sbBjLEvLvFLf1uzAUV66PcEPt4xCGCmOZSxVf3xzA==
+core-js@^3.7.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.0.tgz#1d46fb33720bc1fa7f90d20431f36a5540858986"
+  integrity sha512-5+5VxRFmSf97nM8Jr2wzOwLqRo6zphH2aX+7KsAUONObyzakDNq2G/bgbhinxB4PoV9L3aXQYhiDKyIKWd2c8g==
 
 cross-spawn@^7.0.2:
   version "7.0.3"
@@ -584,12 +584,12 @@ eslint-plugin-eslint-comments@^3.2.0:
     escape-string-regexp "^1.0.5"
     ignore "^5.0.5"
 
-eslint-plugin-filenames-simple@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-filenames-simple/-/eslint-plugin-filenames-simple-0.5.0.tgz#042fab3637aaffa7e226f2fcd6d46c4b84885d70"
-  integrity sha512-HJEndLQoO9ryZrELliW4Q+HahWvR+28MdRoK3WhOXG+Mg5sgr5sj5aBo4bzzjvc1OuJjDzhxIWD3SsVmT814gg==
+eslint-plugin-filenames-simple@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-filenames-simple/-/eslint-plugin-filenames-simple-0.6.0.tgz#94401250dd92a8894b8c095981294f960451697d"
+  integrity sha512-KKu/Lv8F3T3zDTwj167JEhm8uzL/HyyJDhQa6BA2xvXQvuUaHDAfF+apJkxxjHmU34W//Yf88Qr9cRWNkzZkgw==
   dependencies:
-    core-js "^3.6.5"
+    core-js "^3.7.0"
     pluralize "^8.0.0"
 
 eslint-plugin-import@^2.22.1:
