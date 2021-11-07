@@ -18,7 +18,7 @@ jobs:
           cache: yarn
       - run: yarn install --frozen-lockfile
 
-      - run: yarn add git://github.com/epaew/eslint-config#${{ github.event.pull_request.head.sha }}
+      - run: yarn upgrade "@epaew/eslint-config@git://github.com/epaew/eslint-config.git#${{ github.event.pull_request.head.sha }}"
       - run: yarn build && yarn upgrade --latest eslint-plugin-filename-simple
 
       - run: yarn run eslint
@@ -40,7 +40,7 @@ jobs:
           cache: yarn
       - run: yarn install --frozen-lockfile
 
-      - run: yarn add git://github.com/epaew/eslint-config#${{ github.event.pull_request.head.sha }}
+      - run: yarn upgrade "@epaew/eslint-config@git://github.com/epaew/eslint-config.git#${{ github.event.pull_request.head.sha }}"
 
       - run: yarn run eslint
 
