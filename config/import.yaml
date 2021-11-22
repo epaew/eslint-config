@@ -14,7 +14,7 @@ rules:
   import/no-self-import: error
   import/no-useless-path-segments: error
   import/order:
-    - error
+    - warn # https://github.com/import-js/eslint-plugin-import/issues/2081
     - alphabetize:
         order: asc
         caseInsensitive: true
