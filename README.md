@@ -3,18 +3,10 @@
 ## How to use
 ### Install
 ```sh
-yarn add -D eslint prettier @epaew/eslint-config
+yarn add -D eslint @epaew/eslint-config
 ```
 
 ### Configuration
-* .prettierrc.yaml
-    ```yaml
-    ---
-    arrowParens: avoid
-    printWidth: 120
-    singleQuote: true
-    trailingComma: all
-    ```
 * .eslintrc.yaml
     ```yaml
     root: true
