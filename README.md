@@ -3,6 +3,8 @@
 ## How to use
 ### Install
 ```sh
+npm i -D eslint @epaew/eslint-config
+# or
 yarn add -D eslint @epaew/eslint-config
 ```
 
